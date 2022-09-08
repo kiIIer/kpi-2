@@ -1,0 +1,18 @@
+<div class="main-div">
+  <mat-card class="main-card">
+    <mat-card-title>
+      <h2>
+        Programming languages I know
+      </h2>
+    </mat-card-title>
+    <mat-card-content>
+      <mat-list role="list">
+        <mat-list-item role="listitem" class="list-row" *ngFor="let lang of langs">
+          <p class="lang">
+            {{lang}}
+          </p>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+  </mat-card>
+</div>

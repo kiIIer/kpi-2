@@ -17,6 +17,9 @@ import {MatListModule} from '@angular/material/list';
 import {ReactiveFormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import { FooterComponent } from './footer/footer.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,7 @@ import {MatInputModule} from '@angular/material/input';
     VideoComponent,
     FormComponent,
     MapComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +43,8 @@ import {MatInputModule} from '@angular/material/input';
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSidenavModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

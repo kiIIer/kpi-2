@@ -1,15 +1,17 @@
-import { createAction, props } from '@ngrx/store';
+import {createAction, props} from '@ngrx/store';
 
 export const navNavigations = createAction(
-  '[Navigation] Nav Navigations'
+  '[Navigation] Nav Navigations',
+  props<{ url: string }>(),
 );
 
-export const navNavigationsSuccess = createAction(
-  '[Navigation] Nav Navigations Success',
-  props<{ data: any }>()
+export const navNavigationSuccesses = createAction(
+  '[Navigation] Nav Navigation Successes',
 );
 
-export const navNavigationsFailure = createAction(
-  '[Navigation] Nav Navigations Failure',
-  props<{ error: any }>()
+export const navNavigationFail = createAction(
+  '[Navigation] Nav Navigation Fail',
 );
+
+
+

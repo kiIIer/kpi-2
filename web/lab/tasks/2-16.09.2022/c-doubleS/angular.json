@@ -104,10 +104,5 @@
       }
     }
   },
-  "defaultProject": "c-doubleS",
-  "cli": {
-    "schematicCollections": [
-      "@ngrx/schematics"
-    ]
-  }
+  "defaultProject": "c-doubleS"
 }

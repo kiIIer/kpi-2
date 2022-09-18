@@ -1,0 +1,23 @@
+.my-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.card {
+  margin: 60px;
+}
+
+.my-img {
+  width: 200px;
+  border-radius: 5px;
+  border: 2px solid black;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+}
+
+.my-img:hover {
+  scale: 1.5;
+  transition-duration: 0.25s;
+}

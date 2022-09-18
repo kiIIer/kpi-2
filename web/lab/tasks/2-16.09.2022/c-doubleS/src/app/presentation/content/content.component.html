@@ -1,0 +1,11 @@
+<mat-drawer-container class="sidenav-container">
+  <mat-drawer
+    [opened]="this.sidenavIsOpened"
+    (closed)="this.sidenavClosedEvent.emit()"
+  >
+    <app-navigations-core></app-navigations-core>
+  </mat-drawer>
+  <mat-drawer-content class="sidenav-content">
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

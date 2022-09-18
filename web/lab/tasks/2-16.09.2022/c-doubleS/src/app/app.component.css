@@ -1,0 +1,17 @@
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.header {
+  flex: 0 1 auto;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.footer {
+  height: 20%;
+}

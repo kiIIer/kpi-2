@@ -1,0 +1,25 @@
+.footer-toolbar {
+  height: 100%;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+.row {
+  height: 100%;
+}
+
+.small {
+  font-size: medium;
+  margin: 0;
+  padding: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

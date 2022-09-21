@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon (click)="toggleSideNavEvent.emit()">menu</mat-icon>
+    </button>
+    <h1>CDoubleS</h1>
+    <div>
+      <a mat-button *ngFor="let name of links">{{name}}</a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

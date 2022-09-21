@@ -1,0 +1,10 @@
+.sidenav-content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.sidenav-container {
+  display: flex;
+  height: 100%;
+}

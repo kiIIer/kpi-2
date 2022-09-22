@@ -1,27 +1,40 @@
-# CDoubleS
+# Лабораторна робота №2
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.9.
+- [Лабораторна робота №2](#лабораторна-робота-2)
+  - [Тема](#тема)
+  - [Мета](#мета)
+  - [Завдання](#завдання)
+  - [Виконання](#виконання)
+  - [Висновок](#висновок)
 
-## Development server
+## Тема
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+CSS
 
-## Code scaffolding
+## Мета
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Навчитися працювати з  CSS розмітку
 
-## Build
+## Завдання
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Побудувати розмітку як зображено на малюнку
+2. В блоці ‘sidebar’ додати наступні елементи:
+   1. Список посилань(Головна, Успішність, Контакти, FAQ);
+   2. Зробити відступи(padding, margin);
+   3. Додати border;
+   4. Вирівняти текст по лівому краю;
+   5. Змінювати колір посилання при наведенні;
+3. В блоці ‘content’ додати наступні елементи
+   1. 6 зображень, у два рядки;
+   2. Кожному додати (box-shadow, border-radius) ;
+   3. При наведені збільшувати зображення
+4. Побудувати футер footer за наступним зразком
 
-## Running unit tests
+## Виконання
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Ну... все в цьому проекті  
+`https://github.com/kiIIer/kpi-2/tree/main/web/lab/tasks/2-16.09.2022/c-doubleS`
 
-## Running end-to-end tests
+## Висновок
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Під час виконання цієї роботи я повторив базові засоби роботи зі стилями та виконав свій маленький челендж. Я зробив sidenav який можна відкривати та закривати за допомогою redux

@@ -1,12 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'mova-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
-export class HomeComponent implements OnInit {
-  constructor() {}
+export class HomeComponent {
+  @Input() isHandset: boolean | null;
+  @Input() isTablet: boolean | null;
+  @Input() isWeb: boolean | null;
 
-  ngOnInit(): void {}
+  constructor() {
+    this.isHandset = false;
+    this.isTablet = false;
+    this.isWeb = true;
+  }
 }

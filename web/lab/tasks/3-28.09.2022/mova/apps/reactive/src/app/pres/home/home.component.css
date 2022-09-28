@@ -1,4 +1,10 @@
 .my-card{
-  width: 360px;
-  height: 360px;
+  height: 300px;
+}
+
+.my-tile{
+}
+
+.my-list{
+  margin: 10px;
 }

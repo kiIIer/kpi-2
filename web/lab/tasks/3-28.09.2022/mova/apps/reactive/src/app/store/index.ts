@@ -3,19 +3,22 @@ import {
   ActionReducerMap,
   createFeatureSelector,
   createSelector,
-  MetaReducer
+  MetaReducer,
 } from '@ngrx/store';
-import { environment } from '../../environments/environment';
-import {reducer, ViewState} from './reducers/view/view.reducer';
+import {environment} from '../../environments/environment';
+import {reducer as vreducer, ViewState} from './reducers/view/view.reducer';
+import {LinkState, reducer as lreducer} from './reducers/link/link.reducer';
 
 export const appStateFeatureKey = 'appState';
 
 export interface State {
-  view: ViewState
+  view: ViewState;
+  link: LinkState;
 }
 
 export const reducers: ActionReducerMap<State> = {
-  "view": reducer
+  'view': vreducer,
+  'link': lreducer,
 };
 
 

@@ -30,6 +30,7 @@
       - [playlists_songs](#playlists_songs)
       - [playlists_users](#playlists_users)
     - [Сутності та атрибути](#сутності-та-атрибути)
+  - [Висновок](#висновок)
 
 ## Тема
 
@@ -266,3 +267,9 @@
 | songs_ganres    | song_id, ganre_id                                     |
 | playlists_songs | playlist_id, song_id                                  |
 | playlists_users | playlist_id, user_id                                  |
+
+## Висновок
+
+На цій лабораторній роботі я навчився опрацьовувати предметну
+область, діставати з неї корисні дані (інформацію) і проводити інфологічне
+проєктування. Створив plantuml діаграмму та багато таблиць.

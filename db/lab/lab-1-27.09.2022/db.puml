@@ -58,13 +58,13 @@ entity playlists_users{
 }
 
 songs::id ||--|{ songs_ganres::song_id
-songs_ganres::ganre_id }|--|| ganres::id
+songs_ganres::ganre_id }|--o| ganres::id
 songs::author_id }|--|| authors::id
-playlists::owner_id }|--|| users::id
-playlists_songs::playlist_id }|--|| playlists::id
-playlists_songs::song_id }|--|| songs::id
-playlists_users::playlist_id }|--|| playlists::id
-playlists_users::user_id }|--|| users::id
+playlists::owner_id }|--o| users::id
+playlists_songs::playlist_id }|--o| playlists::id
+playlists_songs::song_id }|--o| songs::id
+playlists_users::playlist_id }|--o| playlists::id
+playlists_users::user_id }|--o| users::id
 
 
 @enduml

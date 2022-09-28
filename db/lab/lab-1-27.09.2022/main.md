@@ -56,46 +56,46 @@
 @startuml
 
 entity song {
-    *id
+    *id <unique>
     --
     *name
     *likes
     *listens
     lyrics
-    *file_uri
+    ' *file_uri <unique>
     *author_id
 }
 
 entity song_ganre {
-    *song_id
+    *song_id 
     *ganre_id
 }
 
 entity ganre {
-    *id
+    *id <unique>
     --
-    *name
+    *name <unique>
     description
 }
 
 entity author{
-    *id
+    *id <unique>
     --
-    * nickname
+    * nickname <unique>
     first_name
     last_name
 }
 
 entity user{
-    *id
+    *id <unique>
     --
-    *email
+    *email <unique>
     first_name
     last_name
 }
 
 entity playlist{
-    *id
+    *id <unique>
     --
     *owner_id
     *is_public
@@ -111,6 +111,13 @@ entity playlist_user{
     *user_id
 }
 
+entity file{
+    *id <unique>
+    --
+    *path
+    *song_id <unique>
+}
+
 song::id ||--|{ song_ganre::song_id
 song_ganre::ganre_id }|--|| ganre::id
 song::author_id }|--|| author::id
@@ -119,11 +126,10 @@ playlist_song::playlist_id }|--|| playlist::id
 playlist_song::song_id }|--|| song::id
 playlist_user::playlist_id }|--|| playlist::id
 playlist_user::user_id }|--|| user::id
+song::id ||--|{ file::song_id
 
 
 @enduml
 ```
 
 #### Жанр
-
-> 

@@ -1,0 +1,9 @@
+<mova-main-nav
+  [isHandset]="isHandset$ | async"
+  [isTablet]="isTablet$ | async"
+  [isWeb]="isWeb$ | async"
+  [links]="links$ | async"
+  [isNavOpened]="isNavOpened$ | async"
+  (goToEvent)="onGoTo($event)">
+  <ng-content></ng-content>
+</mova-main-nav>

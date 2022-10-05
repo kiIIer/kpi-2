@@ -1,4 +1,4 @@
-import * as fromFAQ from './faq.reducer';
+import * as fromFAQ from '../reducers/faq.reducer';
 import { selectFAQState } from './faq.selectors';
 
 describe('FAQ Selectors', () => {

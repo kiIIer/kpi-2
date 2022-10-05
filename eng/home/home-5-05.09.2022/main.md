@@ -1,6 +1,17 @@
 # HW5
 
 - [HW5](#hw5)
+  - [Assignment](#assignment)
+  - [Solution](#solution)
+    - [Ex. 2A.90](#ex-2a90)
+    - [Ex. 2B.90](#ex-2b90)
+    - [Ex. 2C.90](#ex-2c90)
+    - [Ex. 3A.91](#ex-3a91)
+    - [EX. 4A](#ex-4a)
+    - [Ex. 4B.92](#ex-4b92)
+    - [Ex. 5B.93](#ex-5b93)
+    - [Ex. 5C.93](#ex-5c93)
+  - [The video](#the-video)
 
 ## Assignment
 

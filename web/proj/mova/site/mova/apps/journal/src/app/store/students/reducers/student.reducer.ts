@@ -9,7 +9,14 @@ export interface State {
 }
 
 export const initialState: State = {
-  students: [],
+  students: [
+    {
+      firstName: 'Mike',
+      lastName: 'Molchanov',
+      dateOfBirth: new Date('2004-08-02'),
+      group: 'IA-12',
+    },
+  ],
 };
 
 export const reducer = createReducer(

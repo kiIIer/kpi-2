@@ -1,7 +1,11 @@
-import { createAction, props } from '@ngrx/store';
+import {createAction, props} from '@ngrx/store';
 
-export const viewViews = createAction(
-  '[View] View Views'
+export const viewHandsetOn = createAction(
+  '[View] Handset On',
+);
+
+export const viewHandsetOff = createAction(
+  '[View] Handset Off',
 );
 
 

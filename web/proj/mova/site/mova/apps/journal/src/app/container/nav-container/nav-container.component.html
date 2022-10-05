@@ -1,4 +1,5 @@
 <mova-main-nav
-  (goToEvent)="onGoTo($event)">
+  (goToEvent)="onGoTo($event)"
+  [isHandset]="isHandset$ | async">
   <ng-content></ng-content>
 </mova-main-nav>

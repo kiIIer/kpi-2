@@ -9,7 +9,7 @@ export interface State {
 }
 
 export const initialState: State = {
-  staff: [],
+  staff: [{name: 'Mike Molchanov', contacts: [{type: 'Telegram', detail: '@Mike_mol'}]}],
 };
 
 export const reducer = createReducer(

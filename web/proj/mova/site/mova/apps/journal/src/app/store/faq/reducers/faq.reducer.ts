@@ -9,7 +9,24 @@ export interface State {
 }
 
 export const initialState: State = {
-  faqs: [],
+  faqs: [
+    {question: 'How to angular', answer: 'Just do it'},
+    {question: 'How to angular', answer: 'Just do it'},
+    {question: 'How to angular', answer: 'Just do it'},
+    {question: 'How to angular', answer: 'Just do it'},
+    {question: 'How to angular', answer: 'Just do it'},
+    {question: 'How to angular', answer: 'Just do it'},
+    {question: 'How to angular', answer: 'Just do it'},
+    {question: 'How to angular', answer: 'Just do it'},
+    {question: 'How to angular', answer: 'Just do it'},
+    {question: 'How to angular', answer: 'Just do it'},
+    {question: 'How to angular', answer: 'Just do it'},
+    {question: 'How to angular', answer: 'Just do it'},
+    {question: 'How to angular', answer: 'Just do it'},
+    {question: 'How to angular', answer: 'Just do it'},
+    {question: 'How to make Lera happy?', answer: 'Turn on Iron Maiden and kiss her'},
+    {question: 'How to angular', answer: 'Just do it'},
+  ],
 };
 
 export const reducer = createReducer(

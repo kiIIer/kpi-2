@@ -16,8 +16,8 @@ import {routerReducer, RouterState} from '@ngrx/router-store';
 
 export interface AppState {
   fAQ: fromFAQ.State;
-  story: fromStories.State;
-  contact: fromContacts.State;
+  stories: fromStories.State;
+  contacts: fromContacts.State;
   student: fromStudents.State;
   view: fromView.State;
   router: RouterState;
@@ -25,8 +25,8 @@ export interface AppState {
 
 export const reducers: ActionReducerMap<AppState> = {
   fAQ: fromFAQ.reducer,
-  story: fromStories.reducer,
-  contact: fromContacts.reducer,
+  stories: fromStories.reducer,
+  contacts: fromContacts.reducer,
   student: fromStudents.reducer,
   view: fromView.reducer,
   router: routerReducer,

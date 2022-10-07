@@ -19,7 +19,6 @@ import {RouterModule, Routes} from '@angular/router';
 import {NavContainerComponent} from './container/nav-container/nav-container.component';
 import {StoriesContainerComponent} from './container/stories-container/stories-container.component';
 import {StoreRouterConnectingModule} from '@ngrx/router-store';
-import {RouterEffects} from './store/router/effects/router.effects';
 import {effects} from './store/app/effects';
 import {StoriesComponent} from './presentation/stories/stories.component';
 import {MatCardModule} from '@angular/material/card';
@@ -65,7 +64,7 @@ const routes: Routes = [
     MatListModule,
     MatIconModule,
     MatButtonModule,
-    StoreModule.forRoot(reducers, {}),
+    StoreModule.forRoot(reducers, {metaReducers}),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
     EffectsModule.forFeature(effects),
     MatCardModule,

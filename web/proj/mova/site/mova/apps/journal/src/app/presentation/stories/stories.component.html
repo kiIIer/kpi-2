@@ -1,0 +1,9 @@
+<div class="my-box">
+  <mat-card
+    *ngFor="let story of stories"
+    [ngClass]="{'spacer' : !isHandset}"
+    class="my-card">
+    <mat-card-title>{{story.title}}</mat-card-title>
+    <mat-card-content>{{story.article}}</mat-card-content>
+  </mat-card>
+</div>

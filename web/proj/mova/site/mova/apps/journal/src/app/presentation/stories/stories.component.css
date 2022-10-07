@@ -1,0 +1,13 @@
+.my-card {
+  margin-top: 20px;
+}
+
+.spacer {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.my-box {
+  justify-content: center;
+  text-align: center;
+}

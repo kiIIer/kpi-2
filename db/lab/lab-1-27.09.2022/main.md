@@ -31,6 +31,7 @@
       - [playlists_songs](#playlists_songs)
       - [playlists_users](#playlists_users)
     - [Сутності та атрибути](#сутності-та-атрибути)
+      - [Зв'язки та сутності з атрибутами](#звязки-та-сутності-з-атрибутами)
   - [Висновок](#висновок)
 
 ## Тема
@@ -270,6 +271,16 @@
 | songs_ganres    | song_id, ganre_id                                     |
 | playlists_songs | playlist_id, song_id                                  |
 | playlists_users | playlist_id, user_id                                  |
+
+#### Зв'язки та сутності з атрибутами
+
+| Зв'язок                   | Сутності з атрибутами                    |
+| ------------------------- | ---------------------------------------- |
+| Songs and Ganres          | ganres::id, songs_ganres, songs::id      |
+| Authors and Songs         | authors::id, songs::author_id            |
+| Playlists and their owner | playlists::owner_id, users::id           |
+| Playlists and songs       | playlist::id, playlists_songs, songs::id |
+| Playlists and users       | playlist::id, playlists_users, users::id |
 
 ## Висновок
 

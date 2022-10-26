@@ -14,6 +14,7 @@
       - [songs_ganres](#songs_ganres)
       - [playlists_songs](#playlists_songs)
       - [playlists_users](#playlists_users)
+    - [Зв'язки](#звязки)
     - [Діаграма](#діаграма)
       - [Позначення](#позначення)
   - [Висновок](#висновок)
@@ -113,6 +114,16 @@
 | ----------- | ---------- |
 | user_id     | Допоміжний |
 | playlist_id | Допоміжний |
+
+### Зв'язки
+
+| Зв'язок                   | Сутності з атрибутами                    |
+| ------------------------- | ---------------------------------------- |
+| Songs and Ganres          | ganres::id, songs_ganres, songs::id      |
+| Authors and Songs         | authors::id, songs::author_id            |
+| Playlists and their owner | playlists::owner_id, users::id           |
+| Playlists and songs       | playlist::id, playlists_songs, songs::id |
+| Playlists and users       | playlist::id, playlists_users, users::id |
 
 ### Діаграма
 

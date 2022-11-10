@@ -1,0 +1,36 @@
+@startuml Diary
+entity users {
+    * id <unique>
+    --
+    * email <unique>
+    nickname
+    date_of_birth
+}
+
+entity diaries {
+    * id <unique>
+    --
+    * user_id
+    * design_id
+}
+
+entity entries {
+    * id <unique>
+    --
+    * text
+    * creation_date
+    * diary_id
+}
+
+entity designs {
+    * id <unique>
+    --
+    * color
+    * page_size
+}
+
+users::id |o--|{ diaries::user_id
+diaries::id |o--|{ entries::diary_id
+designs::id |o--|{ diaries::design_id
+
+@enduml

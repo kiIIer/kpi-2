@@ -1,0 +1,76 @@
+@startuml db
+
+entity songs {
+    *id <unique>
+    --
+    *name
+    *likes
+    *listens
+    lyrics
+    *file_uri <unique>
+    *author_id
+}
+
+entity songs_genres {
+    *id <unique>
+    --
+    *song_id
+    *genre_id
+}
+
+entity genres {
+    *id <unique>
+    --
+    *name <unique>
+    description
+}
+
+entity authors{
+    *id <unique>
+    --
+    * nickname
+    first_name
+    last_name
+}
+
+entity users{
+    *id <unique>
+    --
+    *email <unique>
+    first_name
+    last_name
+}
+
+entity playlists{
+    *id <unique>
+    --
+    *name
+    *owner_id
+    *is_public
+}
+
+entity playlists_songs{
+    *id <unique>
+    --
+    *playlist_id
+    *song_id
+}
+
+entity playlists_users{
+    *id <unique>
+    --
+    *playlist_id
+    *user_id
+}
+
+songs::id ||--|{ songs_genres::song_id
+songs_genres::genre_id }|--o| genres::id
+songs::author_id }|--o| authors::id
+playlists::owner_id }|--o| users::id
+playlists_songs::playlist_id }|--o| playlists::id
+playlists_songs::song_id }|--o| songs::id
+playlists_users::playlist_id }|--o| playlists::id
+playlists_users::user_id }|--o| users::id
+
+
+@enduml

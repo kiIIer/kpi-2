@@ -1,0 +1,47 @@
+@startuml datalogicModel
+
+entity companies {
+    * id <unique>
+    --
+    * name <unique>
+    * site_link
+    country
+}
+
+entity planes {
+    * id <unique>
+    --
+    * company_id
+    * type
+    * size
+}
+
+entity users {
+    * id <unique>
+    --
+    * email <unique>
+    name
+    country
+}
+
+entity races {
+    * id <unique>
+    --
+    * date
+    * plane_id
+}
+
+entity tickets {
+    * id <unique>
+    --
+    *user_id
+    *race_id
+    seat
+}
+
+planes::company_id }|--o| companies::id
+planes::id |o--|{ races::plane_id
+tickets::user_id }|--o| users::id
+tickets::race_id }|--o| races::id
+
+@enduml

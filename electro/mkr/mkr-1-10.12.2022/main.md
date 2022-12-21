@@ -82,15 +82,15 @@ $U_{вих} = U_{ке} = Е_{к} - i_{к} * R_{к}$
 
 Для нашого приклада
 
-$K_1 = \neg{C} \wedge \neg{B} \wedge A, K_4 = C \wedge \neg{B} \wedge \neg{A}, K_6=C \wedge B \wedge \neg{A}, K_7 = C \wedge B \wedge A$
+$K_1 = \overline{C} \wedge \overline{B} \wedge A, K_4 = C \wedge \overline{B} \wedge \overline{A}, K_6=C \wedge B \wedge \overline{A}, K_7 = C \wedge B \wedge A$
 
 Булевий вираз ПФ у ДДНФ являє собою суму конституент одиниць
 
-$F = \neg{C} \wedge \neg{B} \wedge A \vee C \wedge \neg{B} \wedge \neg{A} \vee C \wedge B \wedge \neg{A} \vee C \wedge B \wedge A$
+$F = \overline{C} \wedge \overline{B} \wedge A \vee C \wedge \overline{B} \wedge \overline{A} \vee C \wedge B \wedge \overline{A} \vee C \wedge B \wedge A$
 
 Булевий вираз ПФ у ДКНФ являє собою добуток конституент нуля, що записуються у вигляді диз'юнкцій. Кожна з них містить усі змінні в прямому або інверсному вигляді не більш одного разу. Для ПФ, поданої таблицею 4, булевий вираз у ДКНФ має вигляд
 
-$F = (C \vee B \vee A) \wedge (C \vee \neg{B} \vee A) \wedge (C \vee \neg{B} \vee \neg{A}) \wedge (\neg{C} \vee B \vee \neg{A})$
+$F = (C \vee B \vee A) \wedge (C \vee \overline{B} \vee A) \wedge (C \vee \overline{B} \vee \overline{A}) \wedge (\overline{C} \vee B \vee \overline{A})$
 
 ### Питання 6
 
@@ -98,18 +98,18 @@ $F = (C \vee B \vee A) \wedge (C \vee \neg{B} \vee A) \wedge (C \vee \neg{B} \ve
 
 Наведена схема включає 6 логічних елементів:
 
-- Кон'юнктор з інвертором для змінних A та B, на виході отримаємо $\neg{(A \wedge B)}$
-- Інвертор для змінної C, на виході отримаємо $\neg{C}$
+- Кон'юнктор з інвертором для змінних A та B, на виході отримаємо $\overline{(A \wedge B)}$
+- Інвертор для змінної C, на виході отримаємо $\overline{C}$
 - Повторювач D, на виході буде також D
-- Диз'юнктор для перших двох елементів, до дасть $\neg{(A \wedge B)} \vee \neg{C}$
-- Кон'юнктор для попередньої схеми та третьої, на виході $(\neg{(A \wedge B)} \vee \neg{C}) \wedge D$
-- Та останній інвертор для попердньої схеми, тоді вихід цього елемента та значення функції буде $\neg{(\neg{(A \wedge B)} \vee \neg{C}) \wedge D)}$
+- Диз'юнктор для перших двох елементів, до дасть $\overline{(A \wedge B)} \vee \overline{C}$
+- Кон'юнктор для попередньої схеми та третьої, на виході $(\overline{(A \wedge B)} \vee \overline{C}) \wedge D$
+- Та останній інвертор для попердньої схеми, тоді вихід цього елемента та значення функції буде $\overline{(\overline{(A \wedge B)} \vee \overline{C}) \wedge D)}$
 
 Знаходимо значення на наборі 12, 1100
 
 За законами булевої алгебри кон'юнкція з нулем дає завжди 0, на передостінній схемі буде 0, бо D=0, інвертувавши це значення отримаємо значення функції на цьому наборі, $F(1100) = 1$
 
-**Відповідь $F = \neg{(\neg{(A \wedge B)} \vee \neg{C}) \wedge D)}, F(1100)=1$**
+**Відповідь $F = \overline{(\overline{(A \wedge B)} \vee \overline{C}) \wedge D)}, F(1100)=1$**
 
 ### Питання 7
 
@@ -130,5 +130,9 @@ $U_{вх макс} = \frac{U_{вих макс}}{K_{ПЕР}} = \frac{2^{np.вих
 ![9](assets/9.png)
 
 $U_{вихмакс} = U_{вхмакс} *K_{ПЕР} = (2^{npвхДК}-1)* K_{ПЕР}$, де np.вх.ДК - число розрядів вхідного ДК, $K_{ПЕР} = 10*2^{Np.вх.ДК}$, Np.вх.ДК - номер розряду вхідного ДК. Тоді $U_{вихмакс} = (2^6-1)*40$ = 63*40 = 2520 mB = 2.52 B
+
+Схема підключення відповідного ЦАП
+
+![10](assets/10.png)
 
 **Відповідь $U_{вих}=2520 mB = 2.52 B$**
